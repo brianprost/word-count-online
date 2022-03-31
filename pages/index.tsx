@@ -21,30 +21,28 @@ const Home: NextPage = () => {
   }
 
   return (
-    <section className="flex h-screen flex-col justify-between bg-base-100">
+    <section className="flex h-screen flex-col justify-between bg-primary">
       <div className="container mx-auto flex h-full flex-col items-center justify-center gap-4">
-        <div className="stats stats-horizontal bg-primary-focus shadow lg:stats-horizontal">
+        <div className="stats stats-horizontal bg-secondary text-secondary-content shadow lg:stats-horizontal">
           <div className="stat">
-            <div className="stat-title text-primary-content">Words</div>
-            <div className="stat-value text-accent drop-shadow-md">
-              {wordCount}
-            </div>
+            <div className="stat-title ">Words</div>
+            <div className="stat-value drop-shadow-md">{wordCount}</div>
           </div>
           <div className="stat">
-            <div className="stat-title text-primary-content">Time to read</div>
-            <div className="stat-value text-accent-focus">
+            <div className="stat-title">Time to read</div>
+            <div className="stat-value">
               {minToRead} Minute{minToRead < 2 ? '' : 's'}
             </div>
           </div>
         </div>
         <textarea
-          className="textarea textarea-accent h-1/2 w-full"
+          className="textarea textarea-bordered textarea-secondary h-1/2 w-full bg-primary bg-opacity-10 placeholder:text-primary-focus"
           value={text}
-          placeholder={'paste or type text here'}
+          placeholder={'Paste or type text here...'}
           onChange={textHandler}
         />
       </div>
-      <footer className="footer items-center bg-secondary p-4 font-bold text-secondary-content antialiased">
+      <footer className="footer items-center bg-secondary p-3 font-bold text-secondary-content antialiased">
         <div className="grid-flow-col items-center">
           <img
             src="img/brian-prost-scarecrow.png"
@@ -52,16 +50,16 @@ const Home: NextPage = () => {
             className="h-9 rounded-md"
           />
           <p>
-            Made by{' '}
+            Made by
             <a
-              className="ml-1 rounded-md border-b border-primary py-2 px-1 font-brian-theme text-xl hover:border-primary-content hover:bg-primary hover:text-primary-content"
+              className="ml-2 rounded-md border-b border-primary py-2 px-1 font-brian-theme text-xl hover:border-primary-content hover:bg-primary hover:text-primary-content"
               href="https://brianprost.com"
             >
               bRIAN pRōST
             </a>
           </p>
         </div>
-        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <div className="mr-2 grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <a
             href="https://linkedin.com/in/brianprost"
             target="_blank"
