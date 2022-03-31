@@ -6,10 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans-arabic": "^4.5.6",
+    "@fontsource/major-mono-display": "^4.5.6",
     "daisyui": "^2.13.4",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",

@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -7,21 +9,26 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": '#3ec9a4',
-          "secondary": '#dbd655',
-          "accent": '#3457a8',
-          "neutral": '#191424',
-          "base-100": '#464346',
-          "info": '#3F6AE9',
-          "success": '#1E7B53',
-          "warning": '#CCA405',
-          "error": '#F2726E',
+          primary: '#efb192',
+          secondary: '#116c7a',
+          accent: '#c7e6fc',
+          neutral: '#181C20',
+          'base-100': '#FDFCFD',
+          info: '#6185EF',
+          success: '#28E69D',
+          warning: '#FDB368',
+          error: '#F5383F',
         },
       },
     ],
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['IBM Plex Sans Arabic', defaultTheme.fontFamily.sans],
+        'brian-theme': 'Major Mono Display',
+      },
+    },
   },
-  plugins: [require("@tailwindcss/typography"), require('daisyui')],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 }
