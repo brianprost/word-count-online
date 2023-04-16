@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import { CgWebsite } from 'react-icons/cg'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import Head from 'next/head'
 
