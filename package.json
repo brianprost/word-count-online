@@ -6,24 +6,24 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fontsource/ibm-plex-sans-arabic": "^4.5.6",
-    "@fontsource/major-mono-display": "^4.5.6",
-    "daisyui": "^2.13.4",
+    "@fontsource/ibm-plex-sans-arabic": "^4.5.11",
+    "@fontsource/major-mono-display": "^4.5.11",
+    "daisyui": "^2.51.5",
     "next": "^13.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "17.0.4",
     "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.14",
     "eslint-config-next": "^13.3.0",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.1",
-    "tailwindcss": "^3.0.7",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.3.1",
     "typescript": "4.5.4"
   }
 }
